@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'profile.dart';
+import 'home.dart';
 
 void main() {
   runApp(const MainApp());
@@ -87,7 +87,7 @@ class WelcomeScreen extends StatelessWidget {
 
                 Navigator.push(
 context,
-MaterialPageRoute(builder: (context) => const ProfilScreen()),
+MaterialPageRoute(builder: (context) => const HomePage()),
 
 );
               },

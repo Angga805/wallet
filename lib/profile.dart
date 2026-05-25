@@ -22,11 +22,14 @@ class ProfilScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Widget Ikon (Bisa dianggap sebagai foto profil)
-              const Icon(
-                Icons.account_circle,
-                size: 100,
-                color: Colors.blue,
-              ),
+              CircleAvatar(
+                  radius: 65, // ukuran border luar
+                  backgroundColor: const Color.fromARGB(255, 255, 251, 0), // warna border
+                  child: CircleAvatar(
+                      radius: 60, // ukuran foto profil
+                      backgroundImage: AssetImage('assets/foto.jpg'),
+  ),
+),
 
               const SizedBox(height: 10),
 
